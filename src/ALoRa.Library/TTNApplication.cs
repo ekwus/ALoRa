@@ -33,7 +33,7 @@ namespace ALoRa.Library
             get { return m_client.IsConnected; }
         }
 
-        public TTNApplication(string appId, string appKey, string region)
+        public TTNApplication(string appId, string accessKey, string region)
         {
             m_appId = appId;
             m_clientId = Guid.NewGuid().ToString();
@@ -44,7 +44,7 @@ namespace ALoRa.Library
             m_client.MqttMsgSubscribed += M_client_MqttMsgSubscribed;
             m_client.MqttMsgUnsubscribed += M_client_MqttMsgUnsubscribed;
 
-            m_client.Connect(m_clientId, m_appId, appKey);
+            m_client.Connect(m_clientId, m_appId, accessKey);
 
             m_client.Subscribe( new string[] { "+/devices/+/up" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
         }
