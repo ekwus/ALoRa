@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALoRa.Library", "src\ALoRa.Library\ALoRa.Library.csproj", "{78A7B1C0-8FE1-4B77-B6BD-BCCE220EFA3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALoRa.ConsoleApp", "src\ALoRa.ConsoleApp\ALoRa.ConsoleApp.csproj", "{0ACB4F29-4205-4374-8A12-B666E73179AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78A7B1C0-8FE1-4B77-B6BD-BCCE220EFA3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A7B1C0-8FE1-4B77-B6BD-BCCE220EFA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A7B1C0-8FE1-4B77-B6BD-BCCE220EFA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A7B1C0-8FE1-4B77-B6BD-BCCE220EFA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ACB4F29-4205-4374-8A12-B666E73179AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACB4F29-4205-4374-8A12-B666E73179AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACB4F29-4205-4374-8A12-B666E73179AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACB4F29-4205-4374-8A12-B666E73179AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
