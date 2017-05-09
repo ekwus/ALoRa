@@ -3,9 +3,10 @@
   <metadata>
     <id>Ekwus.ALoRa</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>ALoRa Library for TTN integration</title>
     <authors>David Ritchie</authors>
     <owners>David Ritchie</owners>
+    <projectUrl>https://github.com/ekwus/ALoRa</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Library for receiving LoRaWAN messages from The Things Network (TTN)</description>
     <releaseNotes>Initial working release.</releaseNotes>
