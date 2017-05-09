@@ -5,7 +5,7 @@ When I started looking at LoRa and LoRaWAN I found that there wasn't many C# exa
 
 I've tried to follow and extend the model presented by The Things Network (TTN) by having and `TTNApplications` object and keep the initialisation in line with the TTN terminology. Once an application is created you will then start to receive `TTNMessage` objects for each message received via the `MessageReceived` event.
 
-## ToDO
+## ToDo
 I want to add the ability to publish messages to the application soon and to allow more device orientated function such as just getting message for a specific device and being able to send messages to the device too. Any other ideas, please get in touch?
 
 ## Nuget
@@ -24,7 +24,7 @@ https://www.nuget.org/packages/Ekwus.ALoRa/
 ...This gets prepended to the URL used to access TTN. Currently the URL is hardcoded and will end up as <region>.thethings.network. A typical region value is "eu" and you can find yours on the end of the applicatio Hanlder value which will be somthing like "ttn-handler-eu"
 
 ## Example
-A simple console app can be created as follows (yes the this access a live TTN application, please don't abuse it);
+A simple console app can be created as follows (yes the this accesses a live TTN application, please don't abuse it);
 
 ```C#
 class Program
