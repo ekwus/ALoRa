@@ -18,7 +18,7 @@ namespace ALoRa.Library
 
         public class LoRaMetadata
         {
-            public DateTime time { get; set; }
+            public DateTime? time { get; set; }
             public decimal frequency { get; set; }
             public string modulation { get; set; }
             public string data_rate { get; set; }
@@ -31,7 +31,7 @@ namespace ALoRa.Library
         {
             public string gtw_id { get; set; }
             public Int64 timestamp { get; set; }
-            public DateTime time { get; set; }
+            public DateTime? time { get; set; }
             public int channel { get; set; }
             public int rssi { get; set; }
             public decimal snr { get; set; }
