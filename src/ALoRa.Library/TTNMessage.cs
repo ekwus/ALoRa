@@ -21,7 +21,7 @@ namespace ALoRa.Library
             return msg;
         }
 
-        public DateTime Timestamp { get; set; }
+        public DateTime? Timestamp { get; set; }
         public string DeviceID { get; set; }
         public LoRaMessage RawMessage { get; set; }
         public string Topic { get; set; }
