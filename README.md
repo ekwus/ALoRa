@@ -2,7 +2,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/a25p781igvbic443/branch/master?svg=true)](https://ci.appveyor.com/project/ekwus/alora/branch/master)
 [![NuGet Version](https://img.shields.io/nuget/v/Ekwus.ALoRa.svg)](https://www.nuget.org/packages?q=Ekwus.ALoRa)
 [![Nuget Downloads](https://img.shields.io/nuget/dt/Ekwus.ALoRa.svg)](https://www.nuget.org/packages?q=Ekwus.ALoRa)
-[![License]](https://img.shields.io/github/license/ekwus/ALoRa.svg)(https://raw.githubusercontent.com/ekwus/ALoRa/master/LICENSE)
+[![License](https://img.shields.io/github/license/ekwus/ALoRa.svg)](https://raw.githubusercontent.com/ekwus/ALoRa/master/LICENSE)
 
 C# Client for The Things Network Lora Applications
 
