@@ -1,4 +1,7 @@
 # ALoRa
+[![Build status](https://ci.appveyor.com/api/projects/status/a25p781igvbic443/branch/master?svg=true)](https://ci.appveyor.com/project/ekwus/alora/branch/master)
+[![NuGet Version](https://img.shields.io/nuget/v/NSwag.Core.svg)](https://www.nuget.org/packages?q=Ekwus.ALoRa)
+
 C# Client for The Things Network Lora Applications
 
 When I started looking at LoRa and LoRaWAN I found that there wasn't many C# examples out there showing how to connect to The Things Network (or others). The MQTT protocol language can be confusing to start with so here goes my attempt at making things simple!!
