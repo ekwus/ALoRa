@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("David Ritchie")]
 [assembly: AssemblyProduct("ALoRa.Library")]
-[assembly: AssemblyCopyright("Copyright © David Ritchie 2017")]
+[assembly: AssemblyCopyright("Copyright © David Ritchie 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

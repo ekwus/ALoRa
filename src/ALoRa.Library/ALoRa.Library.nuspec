@@ -13,4 +13,7 @@
     <copyright>Copyright 2017 David Ritchie</copyright>
     <tags>MQTT LoRa LoRaWAN TTN</tags>
   </metadata>
+  <files>
+    <file src="..\..\build\Release\ALoRa.Library\ALoRa.Library.dll" target="lib\net452" />
+  </files>
 </package>
