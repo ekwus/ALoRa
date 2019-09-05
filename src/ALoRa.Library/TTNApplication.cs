@@ -61,11 +61,18 @@ namespace ALoRa.Library
 
         private void M_client_MqttMsgPublishReceived(object sender, uPLibrary.Networking.M2Mqtt.Messages.MqttMsgPublishEventArgs e)
         {
-            var msg = TTNMessage.DeserialiseMessage(e);
-
-            if (m_msgReceived != null)
+            try
             {
-                m_msgReceived(msg);
+                var msg = TTNMessage.DeserialiseMessage(e);
+
+                if (m_msgReceived != null)
+                {
+                    m_msgReceived(msg);
+                }
+            }
+            catch
+            {
+                // Swallow any exceptions during message receive
             }
         }
 

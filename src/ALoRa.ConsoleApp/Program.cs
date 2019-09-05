@@ -28,7 +28,7 @@ namespace ALoRa.ConsoleApp
 
         private static void App_MessageReceived(TTNMessage obj)
         {
-            var data = BitConverter.ToString(obj.Payload);
+            var data = obj.Payload != null ? BitConverter.ToString(obj.Payload) : string.Empty;
             Console.WriteLine($"Message Timestamp: {obj.Timestamp}, Device: {obj.DeviceID}, Topic: {obj.Topic}, Payload: {data}");
         }
     }

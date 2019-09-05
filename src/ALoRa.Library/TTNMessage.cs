@@ -33,7 +33,10 @@ namespace ALoRa.Library
             DeviceID = msg.dev_id;
             RawMessage = msg;
             Topic = topic;
-            Payload = Convert.FromBase64String(msg.payload_raw);
+            if (msg.payload_raw != null)
+            {
+                Payload = Convert.FromBase64String(msg.payload_raw);
+            }
         }
     }
 }
