@@ -17,7 +17,7 @@ namespace ALoRa.Library
 
         protected void CheckDisposed()
         {
-            lock(m_lock)
+            lock (m_lock)
             {
                 if (IsDisposed || IsDisposing)
                 {
@@ -30,7 +30,7 @@ namespace ALoRa.Library
 
         void IDisposable.Dispose()
         {
-            lock(m_lock)
+            lock (m_lock)
             {
                 if (IsDisposed || IsDisposing)
                 {
