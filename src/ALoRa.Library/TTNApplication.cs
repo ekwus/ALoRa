@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
@@ -46,7 +42,7 @@ namespace ALoRa.Library
 
             m_client.Connect(m_clientId, m_appId, accessKey);
 
-            m_client.Subscribe( new string[] { "+/devices/+/up" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
+            m_client.Subscribe(new string[] { "+/devices/+/up" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
         }
 
         protected override void Dispose(bool disposing)
@@ -59,7 +55,7 @@ namespace ALoRa.Library
             //m_client.Publish()
         }
 
-        private void M_client_MqttMsgPublishReceived(object sender, uPLibrary.Networking.M2Mqtt.Messages.MqttMsgPublishEventArgs e)
+        private void M_client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
         {
             try
             {
@@ -76,11 +72,11 @@ namespace ALoRa.Library
             }
         }
 
-        private void M_client_MqttMsgUnsubscribed(object sender, uPLibrary.Networking.M2Mqtt.Messages.MqttMsgUnsubscribedEventArgs e)
+        private void M_client_MqttMsgUnsubscribed(object sender, MqttMsgUnsubscribedEventArgs e)
         {
         }
 
-        private void M_client_MqttMsgSubscribed(object sender, uPLibrary.Networking.M2Mqtt.Messages.MqttMsgSubscribedEventArgs e)
+        private void M_client_MqttMsgSubscribed(object sender, MqttMsgSubscribedEventArgs e)
         {
         }
 

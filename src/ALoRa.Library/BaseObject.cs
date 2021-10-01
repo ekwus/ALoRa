@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ALoRa.Library
 {
@@ -21,7 +17,7 @@ namespace ALoRa.Library
 
         protected void CheckDisposed()
         {
-            lock(m_lock)
+            lock (m_lock)
             {
                 if (IsDisposed || IsDisposing)
                 {
@@ -34,7 +30,7 @@ namespace ALoRa.Library
 
         void IDisposable.Dispose()
         {
-            lock(m_lock)
+            lock (m_lock)
             {
                 if (IsDisposed || IsDisposing)
                 {
